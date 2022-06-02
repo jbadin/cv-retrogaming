@@ -1,0 +1,41 @@
+body {
+  background-color: #1F1F1F;
+  color: white;
+}
+
+body .blink {
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+body .pointer {
+  display: none;
+}
+
+body .levelsLi:hover ~ .pointer {
+  display: inline;
+  position: absolute;
+  margin-top: 15px;
+  left: -20px;
+}
+
+body #levels {
+  list-style: none;
+}
+
+body #levels li {
+  padding-left: 0;
+}
+/*# sourceMappingURL=main.css.map */
