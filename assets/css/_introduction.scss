@@ -1,0 +1,12 @@
+#introduction {
+  font-size: 0.9rem;
+  #avatar {
+    @include EightBitBorder(4px, white, hsl(0, 0%, 12%));
+  }
+  li {
+    margin: 1%;
+  }
+  progress {
+    @include EightBitBorder(4px, white, hsl(0, 0%, 12%));
+  }
+}

@@ -1,9 +1,4 @@
-body {
-  background-color: #1F1F1F;
-  color: white;
-}
-
-body .blink {
+#index .blink {
   animation: blink-animation 1.5s steps(5, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
 }
@@ -20,22 +15,56 @@ body .blink {
   }
 }
 
-body .pointer {
-  display: none;
-}
-
-body .levelsLi:hover ~ .pointer {
-  display: inline;
-  position: absolute;
-  margin-top: 15px;
-  left: -20px;
-}
-
-body #levels {
+#index #levels {
   list-style: none;
 }
 
-body #levels li {
+#index #levels li {
   padding-left: 0;
+}
+
+#index #levels li:hover:before {
+  background-image: url("../images/pointer.png");
+  background-size: 30px 30px;
+  content: '';
+  display: inline-block;
+  height: 30px;
+  margin-left: -2%;
+  position: absolute;
+  width: 30px;
+}
+
+#index #levels a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+#index #levels a:hover {
+  color: white;
+}
+
+#introduction {
+  font-size: 0.9rem;
+}
+
+#introduction #avatar {
+  -webkit-box-shadow: 4px 0 #1f1f1f, -4px 0 #1f1f1f, 0 -4px #1f1f1f, 0 4px #1f1f1f, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+          box-shadow: 4px 0 #1f1f1f, -4px 0 #1f1f1f, 0 -4px #1f1f1f, 0 4px #1f1f1f, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+  margin: 8px auto;
+}
+
+#introduction li {
+  margin: 1%;
+}
+
+#introduction progress {
+  -webkit-box-shadow: 4px 0 #1f1f1f, -4px 0 #1f1f1f, 0 -4px #1f1f1f, 0 4px #1f1f1f, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+          box-shadow: 4px 0 #1f1f1f, -4px 0 #1f1f1f, 0 -4px #1f1f1f, 0 4px #1f1f1f, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+  margin: 8px auto;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

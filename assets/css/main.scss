@@ -1,42 +1,9 @@
 @import '_variables';
+@import '_mixins';
+@import '_index';
+@import '_introduction';
 
 body {
-    background-color: #1F1F1F;
-    color: white;
-
-    .blink {
-        animation: blink-animation 1.5s steps(5, start) infinite;
-        -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
-    }
-
-    @keyframes blink-animation {
-        to {
-            visibility: hidden;
-        }
-    }
-
-    @-webkit-keyframes blink-animation {
-        to {
-            visibility: hidden;
-        }
-    }
-
-    .pointer {
-        display: none;
-    }
-
-    .levelsLi:hover~.pointer {
-        display: inline;
-        position: absolute;
-        margin-top: 15px;
-        left: -20px;
-    }
-
-    #levels {
-        list-style: none;
-
-        li {
-            padding-left: 0;
-        }
-    }
+  background-color: hsl(0, 0%, 12%);
+  color: white;
 }

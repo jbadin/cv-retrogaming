@@ -1,0 +1,6 @@
+@mixin EightBitBorder($width, $color, $bgcolor) {
+  box-shadow: $width 0 $bgcolor, -$width 0 $bgcolor, 0 (-$width) $bgcolor,
+    0 $width $bgcolor, 2 * $width 0 $color, -2 * $width 0 $color,
+    0 (-2 * $width) $color, 0 2 * $width $color, 0 0 0 $width $color;
+  margin: 2 * $width auto;
+}
